@@ -1,0 +1,25 @@
+node_modules/
+.npm-cache/
+.browsers/
+test-results/
+playwright-report/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# Signing material and browser-packed local artifacts must never be committed.
+*.pem
+*.key
+*.p12
+*.pfx
+*.crx
+
+# Keep the current portable build; older local archives remain on disk.
+/*.zip
+!/chatgpt-navigator-1.0.2.zip
+
+# Machine-specific installation records and raw test paths stay local.
+/docs/INSTALLATION.md
+/docs/test-results.json

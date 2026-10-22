@@ -1,0 +1,19 @@
+{
+  "name": "chatgpt-navigator",
+  "version": "1.0.2",
+  "private": true,
+  "type": "module",
+  "description": "Private, lightweight conversation navigation for ChatGPT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck && npm run build && playwright test",
+    "test:ui": "playwright test --headed",
+    "dev": "node scripts/build.mjs --watch"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "esbuild": "0.25.11",
+    "typescript": "5.9.3"
+  }
+}
